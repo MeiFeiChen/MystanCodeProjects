@@ -87,7 +87,7 @@ def draw_names(canvas, name_data, lookup_names):
     # ----- Write your code below this line ----- #
     for i in range(len(lookup_names)):
         name = lookup_names[i]  # name
-        color = COLORS[i % 4]   # color if the line and text
+        color = COLORS[i % len(COLORS)]   # color if the line and text
         for j in range(len(YEARS)):
             x = get_x_coordinate(CANVAS_WIDTH, j)  # x_coordinate
             year = str(YEARS[j])
